@@ -2,7 +2,7 @@
 
 ## naming format
   * [tier][type].[size]
-  * ex. 2C.small would be a pivotalcf install living on open stack of a small footprint.
+  * ex. 2A.small would be a pivotalcf install living on open stack of a small footprint.
   
 ## sizing
   * to be defined later
