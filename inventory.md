@@ -23,9 +23,7 @@
 * (1) Heritage - I get an org on a pcf instance
 
 * (2) PaaS - I get a pre-stoodup PivotalCF foundation of my very own
-  * (2A) OpenStack - I get a pre-stoodup PivotalCF foundation running on OpenStack
   * (2B) vSphere - I get a pre-stoodup PivotalCF foundation running on vSphere
-  * (2C) VCA - I get a pre-stoodup PivotalCF foundation running on vCloudAir
 
 * (3) IaaS - I get my own IaaS to spin up VMs, networking, etc on
   * (3A) OpenStack - I get my very own OpenStack install to use however i wish
