@@ -31,3 +31,5 @@
   * (3C) vCloudDirector Org - I get my very own vCloudDirector Org to use however i wish
 
 * (4) MaaS - I get my own bare metal set of servers to do whatever i want with
+  * (4A) Raw metal - i get some servers
+  * (4B) Raw metal + JuJU - i get some servers targeted by the juju console to configure however i want
