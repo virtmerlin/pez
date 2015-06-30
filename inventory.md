@@ -27,7 +27,6 @@
 
 * (3) IaaS - I get my own IaaS to spin up VMs, networking, etc on
   * (3A) OpenStack Org - I get my very own OpenStack Org to use however i wish
-  * (3B) vSphere - I get my very own vSphere install to use however i wish
   * (3C) vCloudDirector Org - I get my very own vCloudDirector Org to use however i wish
 
 * (4) MaaS - I get my own bare metal set of servers to do whatever i want with
