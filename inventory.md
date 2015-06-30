@@ -11,7 +11,7 @@
   * 1 heritage - org access on a pivotalcf (only org level control, no ops manager control)
   * 2 PaaS - only access to the paas level (no iaas visibility or control)
   * 3 IaaS - iaas access and up (no visibility to the metal)
-  * 4 MaaS - metal and up ( i configure and control everything from real server on up )
+  * 4 MaaS - metal and up ( i configure and control everything from real server on up ) I get a cluster of metal with a juju console targetting it.
 
 ## types
   * A OpenStack 
