@@ -5,7 +5,7 @@
   * ex. 2A.small would be a pivotalcf install living on open stack of a small footprint.
   
 ## sizing
-  * small - 128GB ram / 250GB storage / 2 routable IPs 
+  * 2C.small - 128GB ram / 250GB storage / 2 routable IPs 
 
 ## tiers
   * 1 heritage - org access on a pivotalcf (only org level control, no ops manager control)
