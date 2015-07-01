@@ -5,7 +5,7 @@
   * ex. 2A.small would be a pivotalcf install living on open stack of a small footprint.
   
 ## sizing
-  * to be defined later
+  * small - 128GB ram / 250GB storage / 2 routable IPs 
 
 ## tiers
   * 1 heritage - org access on a pivotalcf (only org level control, no ops manager control)
@@ -17,18 +17,20 @@
   * A OpenStack 
   * B vSphere
   * C vCloud
+  * D Raw
+  * E JuJu
 
 ## Offerings
 
 * (1) Heritage - I get an org on a pcf instance
 
 * (2) PaaS - I get a pre-stoodup PivotalCF foundation of my very own
-  * (2B) vSphere - I get a pre-stoodup PivotalCF foundation running on vSphere
+  * (2C) vCloud - I get a pre-stoodup PivotalCF foundation running on vCloud
 
 * (3) IaaS - I get my own IaaS to spin up VMs, networking, etc on
   * (3A) OpenStack Org - I get my very own OpenStack Org to use however i wish
   * (3C) vCloudDirector Org - I get my very own vCloudDirector Org to use however i wish
 
 * (4) MaaS - I get my own bare metal set of servers to do whatever i want with
-  * (4A) Raw metal - i get some servers
-  * (4B) Raw metal + JuJu - i get some servers targeted by the juju console to configure however i want
+  * (4D) Raw metal - i get some servers
+  * (4E) Raw metal + JuJu - i get some servers targeted by the juju console to configure however i want
