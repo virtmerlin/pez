@@ -79,6 +79,7 @@ lease
    * Inventory service updates lease-guid with the newly created lease record
    * Inventory calls dispenser with a post of the lease object
    * Inventory parses dispenser response, updates lease record, and updates inventry item record
+   * client that called inventory service gets the lease object as their response
 
 ## dispenser call flow for lease post
  * dispenser recieves post of lease object
