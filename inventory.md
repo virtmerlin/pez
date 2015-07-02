@@ -66,3 +66,23 @@ lease
 }
 
 ```
+
+## Responsibilities
+
+1. Maintain Inventory
+2. Manage Leases
+
+### Inventory Admin APIs
+```
+GET    /admin/products                    # return all products
+GET    /admin/products/id                 # return product details
+POST   /admin/products                    # create new product record
+PUT    /admin/products/:id                # update product
+DELETE /admin/products/:id                # delete product
+```
+
+### Portal Routes
+```
+GET   /products                           # return list of product SKUs
+
+```
