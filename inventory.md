@@ -34,3 +34,35 @@
 * (4) MaaS - I get my own bare metal set of servers to do whatever i want with
   * (4D) Raw metal - i get some servers
   * (4E) Raw metal + JuJu - i get some servers targeted by the juju console to configure however i want
+
+## possible inventory object structure
+```
+inventory
+{
+ sku: 2C.small,
+ guid: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
+ tier: 2,
+ type: C,
+ size: small,
+ attributes: [
+  vCloud,
+  PivotalCF,
+  128GB ram,
+  250GB storage,
+  2 routable IPs,
+ ]
+ lease-guid:917397-292735-98293752935
+}
+
+lease
+{
+  guid: 917397-292735-98293752935,
+  inventory_guid: guid: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
+  user: dnem,
+  lease_status: active #[rebuilding, leased, available, maintenance, archiving], 
+  lease_duration: 14 #days
+  lease_end_date: 92986228624 #epoch
+  lease_start_date: 73682725283 #epoch
+}
+
+```
