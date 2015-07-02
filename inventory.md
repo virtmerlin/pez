@@ -51,6 +51,7 @@ inventory
   250GB storage,
   2 routable IPs,
  ]
+ item_status: leased #[rebuilding, leased, available, maintenance, archiving, reserving], 
  lease-guid:917397-292735-98293752935
 }
 
@@ -59,13 +60,37 @@ lease
   guid: 917397-292735-98293752935,
   inventory_guid: guid: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
   user: dnem,
-  lease_status: active #[rebuilding, leased, available, maintenance, archiving], 
   lease_duration: 14 #days
   lease_end_date: 92986228624 #epoch
   lease_start_date: 73682725283 #epoch
+  credentials: {
+
+  }
+  status: expired #[active|expired|rejected|pending]
 }
 
 ```
+
+## inventory service call flow
+ * Query inventory service for available items of a particular sku
+ * Query inventory service asking for a lease on a particular sku
+   * Inventory service updates item_status to a reserving state
+   * Inventory service creates a new lease record
+   * Inventory service updates lease-guid with the newly created lease record
+   * Inventory calls dispenser with a post of the lease object
+   * Inventory parses dispenser response, updates lease record, and updates inventry item record
+
+## dispenser call flow for lease post
+ * dispenser recieves post of lease object
+  * validate user is allowed to aquire lease of intentory item
+  * vend item (wtf does that mean :) )
+  * return the decorated lease object as part of a composed response object w/ an added status and potential error message
+
+##NOTE:
+* requires out of band event driven stuff, to clean up the reclaimed, previously leased items. this will not only clean the actual item of guid X but update the items record with proper state on success, failure, etc status.
+
+* above flow works for lease and unlease flow, just more or less in reverse.
+
 
 ## Responsibilities
 
